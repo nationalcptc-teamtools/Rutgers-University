@@ -121,6 +121,7 @@ pipx_tools=(
     "git+https://github.com/r0oth3x49/ghauri"
     "git+https://github.com/arthaud/git-dumper"
     "rpcclient"
+    "pypykatz"
 )
 
 for tool in "${pipx_tools[@]}"; do
