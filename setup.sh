@@ -133,14 +133,21 @@ done
 sudo -H -u $1 pipx ensurepath >>$path/setup.log 2>>$path/error.log
 
 git clone https://github.com/theyoge/AD-Pentesting-Tools.git >>$path/setup.log 2>>$path/error.log
+
 current_step=$((current_step + 1))
 progress_bar $current_step $total_steps
+
 git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries.git >>$path/setup.log 2>>$path/error.log
+
 current_step=$((current_step + 1))
 progress_bar $current_step $total_steps
+
 git clone https://github.com/expl0itabl3/Toolies.git >>$path/setup.log 2>>$path/error.log
+
 current_step=$((current_step + 1))
 progress_bar $current_step $total_steps
+
+git clone https://github.com/h4rithd/PrecompiledBinaries.git >>$path/setup.log 2>>$path/error.log
 
 git clone https://github.com/Greenwolf/ntlm_theft.git >>$path/setup.log 2>>$path/error.log && \
 current_step=$((current_step + 1))
